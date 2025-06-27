@@ -9,13 +9,18 @@
 
 
     <TextView
+        android:id="@+id/myName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
         android:text="Wendell Lima Silva"
+        android:textColor="@color/branco"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/capa"
+        app:layout_constraintVertical_bias="0.068" />
 
     <ImageView
         android:id="@+id/capa"
@@ -72,6 +77,47 @@
         app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:layout_constraintVertical_bias="0.0" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="59dp"
+        android:layout_height="67dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/Series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Series"
+        android:textColor="@color/branco"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Filmes"
+        android:textColor="@color/branco"
+        app:layout_constraintStart_toEndOf="@id/Series"
+        app:layout_constraintTop_toTopOf="@id/Series" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="Lista"
+        android:textColor="@color/branco"
+        app:layout_constraintStart_toEndOf="@id/textView7"
+        app:layout_constraintTop_toTopOf="@id/textView7" />
+
     <TextView
         android:id="@+id/genero3"
         android:layout_width="wrap_content"
@@ -87,12 +133,54 @@
         app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/lancametos_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lançamentos"
+        android:textColor="@color/branco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MyList_button"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp" />
+
+    <ImageView
+        android:id="@+id/first_image"
+        android:layout_width="108dp"
+        android:layout_height="62dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lancametos_text"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/elite" />
+
+    <ImageView
+        android:id="@+id/second_image"
+        android:layout_width="113dp"
+        android:layout_height="61dp"
+        app:layout_constraintTop_toTopOf="@id/first_image"
+        app:layout_constraintStart_toEndOf="@id/first_image"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/you" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="109dp"
+        android:layout_height="62dp"
+        app:layout_constraintTop_toTopOf="@id/second_image"
+        app:layout_constraintStart_toEndOf="@id/second_image"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/squid_game" />
+
+
     <Button
         android:id="@+id/watch_button"
         android:layout_width="125dp"
         android:layout_height="51dp"
         android:layout_marginBottom="40dp"
         android:text="Assistir"
+        android:drawableLeft="@drawable/start"
+        android:paddingLeft="13dp"
         app:layout_constraintBottom_toBottomOf="@+id/capa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,7 +195,7 @@
         android:layout_marginTop="235dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@android:color/transparent"
-        android:drawableTop="@drawable/mais_jpeg"
+        android:drawableTop="@drawable/mais_final"
         android:padding="0dp"
         android:text="Minha Lista"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -125,7 +213,7 @@
         android:layout_marginTop="235dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@android:color/transparent"
-        android:drawableTop="@drawable/mais_jpeg"
+        android:drawableTop="@drawable/info"
         android:padding="0dp"
         android:text="Detalhes"
         app:layout_constraintBottom_toBottomOf="parent"
