@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix2</string>
+    <string name="lancamentos">Veröffentlichungen</string>
+    <string name="minha_lista">Meine Liste</string>
+    <string name="detalhes">Details</string>
+    <string name="acao">Aktion</string>
+    <string name="romance">Romantik</string>
+    <string name="ficcao">Fiktion</string>
+    <string name="filmes">Filme</string>
+    <string name="series">Serie</string>
+</resources>
